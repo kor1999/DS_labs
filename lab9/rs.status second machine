@@ -1,0 +1,127 @@
+rs0:SECONDARY> rs.status()
+{
+	"set" : "rs0",
+	"date" : ISODate("2019-11-01T20:21:43.705Z"),
+	"myState" : 2,
+	"term" : NumberLong(1),
+	"syncingTo" : "machine1:27017",
+	"syncSourceHost" : "machine1:27017",
+	"syncSourceId" : 0,
+	"heartbeatIntervalMillis" : NumberLong(2000),
+	"majorityVoteCount" : 2,
+	"writeMajorityCount" : 2,
+	"optimes" : {
+		"lastCommittedOpTime" : {
+			"ts" : Timestamp(1572639703, 1),
+			"t" : NumberLong(1)
+		},
+		"lastCommittedWallTime" : ISODate("2019-11-01T20:21:43.183Z"),
+		"readConcernMajorityOpTime" : {
+			"ts" : Timestamp(1572639703, 1),
+			"t" : NumberLong(1)
+		},
+		"readConcernMajorityWallTime" : ISODate("2019-11-01T20:21:43.183Z"),
+		"appliedOpTime" : {
+			"ts" : Timestamp(1572639703, 1),
+			"t" : NumberLong(1)
+		},
+		"durableOpTime" : {
+			"ts" : Timestamp(1572639703, 1),
+			"t" : NumberLong(1)
+		},
+		"lastAppliedWallTime" : ISODate("2019-11-01T20:21:43.183Z"),
+		"lastDurableWallTime" : ISODate("2019-11-01T20:21:43.183Z")
+	},
+	"lastStableRecoveryTimestamp" : Timestamp(1572639673, 1),
+	"lastStableCheckpointTimestamp" : Timestamp(1572639673, 1),
+	"members" : [
+		{
+			"_id" : 0,
+			"name" : "machine1:27017",
+			"ip" : "172.31.24.64",
+			"health" : 1,
+			"state" : 1,
+			"stateStr" : "PRIMARY",
+			"uptime" : 2561,
+			"optime" : {
+				"ts" : Timestamp(1572639693, 1),
+				"t" : NumberLong(1)
+			},
+			"optimeDurable" : {
+				"ts" : Timestamp(1572639693, 1),
+				"t" : NumberLong(1)
+			},
+			"optimeDate" : ISODate("2019-11-01T20:21:33Z"),
+			"optimeDurableDate" : ISODate("2019-11-01T20:21:33Z"),
+			"lastHeartbeat" : ISODate("2019-11-01T20:21:41.998Z"),
+			"lastHeartbeatRecv" : ISODate("2019-11-01T20:21:43.120Z"),
+			"pingMs" : NumberLong(0),
+			"lastHeartbeatMessage" : "",
+			"syncingTo" : "",
+			"syncSourceHost" : "",
+			"syncSourceId" : -1,
+			"infoMessage" : "",
+			"electionTime" : Timestamp(1572637152, 1),
+			"electionDate" : ISODate("2019-11-01T19:39:12Z"),
+			"configVersion" : 1
+		},
+		{
+			"_id" : 1,
+			"name" : "machine2:27017",
+			"ip" : "172.31.16.241",
+			"health" : 1,
+			"state" : 2,
+			"stateStr" : "SECONDARY",
+			"uptime" : 2658,
+			"optime" : {
+				"ts" : Timestamp(1572639703, 1),
+				"t" : NumberLong(1)
+			},
+			"optimeDate" : ISODate("2019-11-01T20:21:43Z"),
+			"syncingTo" : "machine1:27017",
+			"syncSourceHost" : "machine1:27017",
+			"syncSourceId" : 0,
+			"infoMessage" : "",
+			"configVersion" : 1,
+			"self" : true,
+			"lastHeartbeatMessage" : ""
+		},
+		{
+			"_id" : 2,
+			"name" : "machine3:27017",
+			"ip" : "172.31.24.187",
+			"health" : 1,
+			"state" : 2,
+			"stateStr" : "SECONDARY",
+			"uptime" : 2561,
+			"optime" : {
+				"ts" : Timestamp(1572639693, 1),
+				"t" : NumberLong(1)
+			},
+			"optimeDurable" : {
+				"ts" : Timestamp(1572639693, 1),
+				"t" : NumberLong(1)
+			},
+			"optimeDate" : ISODate("2019-11-01T20:21:33Z"),
+			"optimeDurableDate" : ISODate("2019-11-01T20:21:33Z"),
+			"lastHeartbeat" : ISODate("2019-11-01T20:21:41.997Z"),
+			"lastHeartbeatRecv" : ISODate("2019-11-01T20:21:41.997Z"),
+			"pingMs" : NumberLong(0),
+			"lastHeartbeatMessage" : "",
+			"syncingTo" : "machine1:27017",
+			"syncSourceHost" : "machine1:27017",
+			"syncSourceId" : 0,
+			"infoMessage" : "",
+			"configVersion" : 1
+		}
+	],
+	"ok" : 1,
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1572639703, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	},
+	"operationTime" : Timestamp(1572639703, 1)
+}
